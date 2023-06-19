@@ -43,7 +43,7 @@ return [
    |
    */
 
-    'currency' => env('paytabs_currency', null),
+    'currency' => env('paytabs_currency', 'AED'),
 
 
     /*
@@ -56,6 +56,13 @@ return [
    |
    */
 
-    'region' => env('paytabs_region', null),
+    'region' => env('paytabs_region', 'ARE'),
+
+
+    'PayTabs' => [
+        'driver' => 'single',
+        'path' => storage_path('logs/paytabs.log'),
+        'level' => 'info',
+    ],
 
 ];

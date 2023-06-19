@@ -1,6 +1,6 @@
 <?php
 
-namespace Paytabscom\Laravel_paytabs\Services;
+namespace Mabdulmonem\LaravelPayTabs\Services;
 
 use Illuminate\Http\Request;
 

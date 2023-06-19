@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Paytabscom\Laravel_paytabs;
+namespace Mabdulmonem\LaravelPayTabs;
 
 
 class paytabs_core
@@ -465,10 +465,11 @@ class PaytabsRequestHolder extends PaytabsHolder
         return $this;
     }
 
-    public function set06HideShipping($on = false)
+    public function set06HideShipping($hide_shipping = false,$hide_billing = false)
     {
         $this->hide_shipping = [
-            'hide_shipping' => $on,
+            'hide_shipping' => $hide_shipping,
+            'hide_billing' => $hide_billing
         ];
 
         return $this;
@@ -525,7 +526,7 @@ class PaytabsRequestHolder extends PaytabsHolder
 
     public function set100userDefined($user_defined = [])
     {
-        
+
         $this->user_defined = [
             'user_defined' => $user_defined
         ];
@@ -950,4 +951,3 @@ class PaytabsApi
         return $result;
     }
 }
-

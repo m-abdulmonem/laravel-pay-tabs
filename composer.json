@@ -1,15 +1,15 @@
 {
-    "name": "paytabscom/laravel_paytabs",
+    "name": "mabdulmonem/laravel-paytabs",
     "version": "1.4.1",
     "type": "composer-package",
-    "description": "Official laravel package to implement PayTabs integration with laravel apps",
+    "description": "laravel package to implement PayTabs integration with laravel apps",
     "authors": [
         {
-            "name": "Walaa Elsaeed",
-            "email": "w.elsaeed@paytabs.com"
+            "name": "Moahmed Abelmonem Khairy",
+            "email": "info@ma-itsolutions.com"
         }
     ],
-    "homepage": "https://site.paytabs.com/en/",
+    "homepage": "https://ma-itsolutions.com/",
     "minimum-stability": "dev",
     "keywords": [
         "Laravel",
@@ -23,7 +23,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Paytabscom\\Laravel_paytabs\\": "src/"
+            "Mabdulmonem\\LaravelPayTabs\\": "src/"
         }
-    }
+    },
+    "scripts": {
+    "post-autoload-dump": [
+        "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+        "@php artisan package:discover --ansi",
+        "@php artisan vendor:publish --tag={paytabs}--force"
+    ]
+}
 }

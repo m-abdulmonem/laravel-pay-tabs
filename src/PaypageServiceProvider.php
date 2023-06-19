@@ -1,6 +1,6 @@
 <?php
 
-namespace Paytabscom\Laravel_paytabs;
+namespace Mabdulmonem\LaravelPayTabs;
 
 use Illuminate\Support\ServiceProvider;
 

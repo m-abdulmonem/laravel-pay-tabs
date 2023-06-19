@@ -58,4 +58,10 @@ return [
 
     'region' => env('paytabs_region', null),
 
+    'PayTabs' => [
+        'driver' => 'single',
+        'path' => storage_path('logs/paytabs.log'),
+        'level' => 'info',
+    ],
+
 ];
