@@ -23,7 +23,7 @@ This Package requires no external dependencies.
 
 INSTALLATION
 ------------
-- composer require paytabscom/laravel_paytabs
+- composer require mabdulmonem/laravel-paytabs
 
 CONFIGURATION
 -------------
