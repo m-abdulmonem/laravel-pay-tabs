@@ -31,9 +31,9 @@ CONFIGURATION
 
 * Go to _config/app.php_ and in the providers array add
 
-        Paytabscom\Laravel_paytabs\PaypageServiceProvider::class,
+        Mabdulmonem\LaravelPayTabs\PaypageServiceProvider::class,
 
-* Create the package config file:
+* Create the package config file: (required in laravel <5.5)
 
         php artisan vendor:publish --tag=paytabs
 
@@ -57,7 +57,7 @@ Usage
 
 * create pay page
 
-        use Paytabscom\Laravel_paytabs\Facades\paypage;
+        use Mabdulmonem\LaravelPayTabs\Facades\paypage;
 
         $pay= paypage::sendPaymentCode('all')
                ->sendTransaction('sale')

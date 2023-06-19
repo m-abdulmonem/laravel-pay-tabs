@@ -62,9 +62,9 @@ class paypage
         return $this;
     }
 
-    public function sendHideShipping($on = false)
+    public function sendHideShipping($shipping = false,$billing= false)
     {
-        $this->paytabs_core->set06HideShipping($on);
+        $this->paytabs_core->set06HideShipping($shipping,$billing);
         return $this;
     }
 
