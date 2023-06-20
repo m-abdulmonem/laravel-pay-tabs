@@ -120,7 +120,7 @@ class paypage
         }
         else {
             Log::channel('PayTabs')->info(json_encode($response));
-            print_r(json_encode($response));
+            // print_r(json_encode($response));
         }
     }
 
@@ -149,7 +149,7 @@ class paypage
             return response()->json(['status' => $status], 200);
         } else if ($pending_success) {
             Log::channel('PayTabs')->info(json_encode($result));
-            print_r('some thing went wrong with integration' . $message);
+            // print_r('some thing went wrong with integration' . $message);
         }
 
     }
@@ -178,7 +178,7 @@ class paypage
             return response()->json(['status' => $status], 200);
         } else if ($pending_success) {
             Log::channel('PayTabs')->info(json_encode($result));
-            print_r('some thing went wrong with integration' . $message);
+            // print_r('some thing went wrong with integration' . $message);
         }
     }
 
@@ -206,7 +206,7 @@ class paypage
             return response()->json(['status' => $status], 200);
         } else if ($pending_success) {
             Log::channel('PayTabs')->info(json_encode($result));
-            print_r('some thing went wrong with integration' . $message);
+            // print_r('some thing went wrong with integration' . $message);
         }
     }
 
